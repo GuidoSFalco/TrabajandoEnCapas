@@ -9,7 +9,7 @@ using Entidades;
 
 namespace Negocios
 {
-    public class Class1
+    public class NegProfesionales
     {
         DatosProfesionales objDatosProfes = new DatosProfesionales();
         public int abmProfesionales(string accion, Profesional objProfesional)
