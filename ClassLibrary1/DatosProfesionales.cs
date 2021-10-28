@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.OleDb;
-using System.Data.SqlClient;
 using Entidades;
 
 namespace Datos
@@ -16,7 +15,7 @@ namespace Datos
         {
             int resultado = -1;
             string orden = string.Empty;
-            if (accion == "Alta")
+            if (accion == "Agregar")
                 orden = "insert into Profesionales values (" + objProfesional.CodProf +
                 ",'" + objProfesional.Nombre + "');";
             if (accion == "Modificar")
@@ -30,9 +29,10 @@ namespace Datos
                 Abrirconexion();
                 resultado = cmd.ExecuteNonQuery();
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw new Exception("Errror al tratar de guardar,borrar o modificar de Profesionales",e);
+                
+                throw new Exception("");
             }
             finally
             {

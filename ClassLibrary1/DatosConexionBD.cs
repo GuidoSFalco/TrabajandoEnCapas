@@ -5,16 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.OleDb;
-using System.Data.SqlClient;
 
 namespace Datos
 {
     public class DatosConexionBD
     {
         public OleDbConnection conexion;
-        public string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=F:\EjemploBD.accdb;Persist Security Info=True";
-    
-
+        public string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Usuario\Documents\Bases de datos\basededatos11.accdb";
     public DatosConexionBD()
     {
         conexion = new OleDbConnection(cadenaConexion);

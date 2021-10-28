@@ -39,6 +39,8 @@ namespace Integrador
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnFormAlumnos = new System.Windows.Forms.Button();
+            this.btnFormDocentes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProfesionales)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,6 +50,7 @@ namespace Integrador
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
             this.txtCodigo.TabIndex = 0;
+            this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
             // 
             // txtNombre
             // 
@@ -55,6 +58,7 @@ namespace Integrador
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 1;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // label1
             // 
@@ -91,7 +95,7 @@ namespace Integrador
             this.Column2});
             this.dgvProfesionales.Location = new System.Drawing.Point(440, 59);
             this.dgvProfesionales.Name = "dgvProfesionales";
-            this.dgvProfesionales.Size = new System.Drawing.Size(330, 150);
+            this.dgvProfesionales.Size = new System.Drawing.Size(330, 269);
             this.dgvProfesionales.TabIndex = 5;
             // 
             // Column1
@@ -125,11 +129,33 @@ namespace Integrador
             this.button2.Text = "Modificar";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // btnFormAlumnos
+            // 
+            this.btnFormAlumnos.Location = new System.Drawing.Point(13, 13);
+            this.btnFormAlumnos.Name = "btnFormAlumnos";
+            this.btnFormAlumnos.Size = new System.Drawing.Size(109, 23);
+            this.btnFormAlumnos.TabIndex = 8;
+            this.btnFormAlumnos.Text = "Formulario Alumnos";
+            this.btnFormAlumnos.UseVisualStyleBackColor = true;
+            this.btnFormAlumnos.Click += new System.EventHandler(this.btnFormAlumnos_Click);
+            // 
+            // btnFormDocentes
+            // 
+            this.btnFormDocentes.Location = new System.Drawing.Point(128, 13);
+            this.btnFormDocentes.Name = "btnFormDocentes";
+            this.btnFormDocentes.Size = new System.Drawing.Size(121, 23);
+            this.btnFormDocentes.TabIndex = 9;
+            this.btnFormDocentes.Text = "Formulario Docentes";
+            this.btnFormDocentes.UseVisualStyleBackColor = true;
+            this.btnFormDocentes.Click += new System.EventHandler(this.btnFormDocentes_Click);
+            // 
             // FormAdmProfes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFormDocentes);
+            this.Controls.Add(this.btnFormAlumnos);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.dgvProfesionales);
@@ -158,6 +184,8 @@ namespace Integrador
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnFormAlumnos;
+        private System.Windows.Forms.Button btnFormDocentes;
     }
 }
 

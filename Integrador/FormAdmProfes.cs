@@ -56,7 +56,7 @@ namespace Integrador
                 objEntProf.CodProf = int.Parse(txtCodigo.Text);
                 objEntProf.Nombre = txtNombre.Text;
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
                 MessageBox.Show("Error","Error");
@@ -124,5 +124,35 @@ namespace Integrador
             else
                 MessageBox.Show("Error", "Se produjo un error al intentar modificar el Profesional");
 }
+
+        private void btnFormAlumnos_Click(object sender, EventArgs e)
+        {
+            Form form = new FormAdmAlumnos();
+            form.Show();
+        }
+
+        private void btnFormDocentes_Click(object sender, EventArgs e)
+        {
+            Form form = new FormAdmDocente();
+            form.Show();
+        }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >=32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255)) 
+            {
+                txtCodigo.Text = "";
+                MessageBox.Show("Solo numeros", "Error");
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                txtNombre.Text = "";
+                MessageBox.Show("No se permiten numeros", "Error");
+            }
+        }
     }
 }

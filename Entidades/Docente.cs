@@ -10,7 +10,7 @@ namespace Entidades
     {
         private string materia;
         private string curso;
-
+        private string nombre;
         public string Materia
         {
             get => materia;
@@ -20,6 +20,10 @@ namespace Entidades
         {
             get => curso;
             set => curso = value;
+        }
+        public string Nombre 
+        { get => nombre; 
+          set => nombre = value; 
         }
     }
 }
