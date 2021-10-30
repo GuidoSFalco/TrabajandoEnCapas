@@ -17,11 +17,11 @@ namespace Integrador
         public FormAdmProfes()
         {
             InitializeComponent();
-            dgvProfesionales.ColumnCount = 2;
-            dgvProfesionales.Columns[0].HeaderText = "Código";
-            dgvProfesionales.Columns[1].HeaderText = "Nombre";
-            dgvProfesionales.Columns[0].Width = 60;
-            dgvProfesionales.Columns[1].Width = 200;
+            //dgvProfesionales.ColumnCount = 2;
+            //dgvProfesionales.Columns[0].HeaderText = "Código";
+            //dgvProfesionales.Columns[1].HeaderText = "Nombre";
+            //dgvProfesionales.Columns[0].Width = 60;
+            //dgvProfesionales.Columns[1].Width = 200;
 
 
 

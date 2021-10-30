@@ -30,19 +30,16 @@ namespace Integrador
         private void InitializeComponent()
         {
             this.btnFormAlumnos = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnGrabar = new System.Windows.Forms.Button();
+            this.btMod = new System.Windows.Forms.Button();
+            this.btAddD = new System.Windows.Forms.Button();
             this.datagridview = new System.Windows.Forms.DataGridView();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblMensaje = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCurso = new System.Windows.Forms.TextBox();
             this.txtMateria = new System.Windows.Forms.TextBox();
             this.btnProfesionales = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btBorrarD = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.datagridview)).BeginInit();
@@ -56,55 +53,34 @@ namespace Integrador
             this.btnFormAlumnos.TabIndex = 17;
             this.btnFormAlumnos.Text = "Formulario Alumnos";
             this.btnFormAlumnos.UseVisualStyleBackColor = true;
-            this.btnFormAlumnos.Click += new System.EventHandler(this.btnFormAlumnos_Click);
             // 
-            // button2
+            // btMod
             // 
-            this.button2.Location = new System.Drawing.Point(216, 173);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Modificar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btMod.Location = new System.Drawing.Point(216, 173);
+            this.btMod.Name = "btMod";
+            this.btMod.Size = new System.Drawing.Size(75, 23);
+            this.btMod.TabIndex = 16;
+            this.btMod.Text = "Modificar";
+            this.btMod.UseVisualStyleBackColor = true;
+            this.btMod.Click += new System.EventHandler(this.btMod_Click_1);
             // 
-            // btnGrabar
+            // btAddD
             // 
-            this.btnGrabar.Location = new System.Drawing.Point(135, 173);
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(75, 23);
-            this.btnGrabar.TabIndex = 15;
-            this.btnGrabar.Text = "Grabar";
-            this.btnGrabar.UseVisualStyleBackColor = true;
-            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            this.btAddD.Location = new System.Drawing.Point(135, 173);
+            this.btAddD.Name = "btAddD";
+            this.btAddD.Size = new System.Drawing.Size(75, 23);
+            this.btAddD.TabIndex = 15;
+            this.btAddD.Text = "Grabar";
+            this.btAddD.UseVisualStyleBackColor = true;
+            this.btAddD.Click += new System.EventHandler(this.btAddD_Click_1);
             // 
             // datagridview
             // 
             this.datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column3,
-            this.Column1,
-            this.Column2});
             this.datagridview.Location = new System.Drawing.Point(391, 61);
             this.datagridview.Name = "datagridview";
             this.datagridview.Size = new System.Drawing.Size(397, 269);
             this.datagridview.TabIndex = 14;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Nombre";
-            this.Column3.Name = "Column3";
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.HeaderText = "Materia";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "Curso";
-            this.Column2.Name = "Column2";
             // 
             // lblMensaje
             // 
@@ -139,7 +115,6 @@ namespace Integrador
             this.txtCurso.Name = "txtCurso";
             this.txtCurso.Size = new System.Drawing.Size(100, 20);
             this.txtCurso.TabIndex = 10;
-            this.txtCurso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCurso_KeyPress);
             // 
             // txtMateria
             // 
@@ -147,7 +122,6 @@ namespace Integrador
             this.txtMateria.Name = "txtMateria";
             this.txtMateria.Size = new System.Drawing.Size(100, 20);
             this.txtMateria.TabIndex = 9;
-            this.txtMateria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMateria_KeyPress);
             // 
             // btnProfesionales
             // 
@@ -157,17 +131,16 @@ namespace Integrador
             this.btnProfesionales.TabIndex = 18;
             this.btnProfesionales.Text = "Formulario Profesionales";
             this.btnProfesionales.UseVisualStyleBackColor = true;
-            this.btnProfesionales.Click += new System.EventHandler(this.btnProfesionales_Click);
             // 
-            // btnEliminar
+            // btBorrarD
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(297, 173);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminar.TabIndex = 19;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            this.btBorrarD.Location = new System.Drawing.Point(297, 173);
+            this.btBorrarD.Name = "btBorrarD";
+            this.btBorrarD.Size = new System.Drawing.Size(75, 23);
+            this.btBorrarD.TabIndex = 19;
+            this.btBorrarD.Text = "Eliminar";
+            this.btBorrarD.UseVisualStyleBackColor = true;
+            this.btBorrarD.Click += new System.EventHandler(this.btBorrarD_Click_1);
             // 
             // label3
             // 
@@ -184,7 +157,6 @@ namespace Integrador
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 20;
-            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // FormAdmDocente
             // 
@@ -193,11 +165,11 @@ namespace Integrador
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btBorrarD);
             this.Controls.Add(this.btnProfesionales);
             this.Controls.Add(this.btnFormAlumnos);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnGrabar);
+            this.Controls.Add(this.btMod);
+            this.Controls.Add(this.btAddD);
             this.Controls.Add(this.datagridview);
             this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.label2);
@@ -215,8 +187,8 @@ namespace Integrador
         #endregion
 
         private System.Windows.Forms.Button btnFormAlumnos;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnGrabar;
+        private System.Windows.Forms.Button btMod;
+        private System.Windows.Forms.Button btAddD;
         private System.Windows.Forms.DataGridView datagridview;
         private System.Windows.Forms.Label lblMensaje;
         private System.Windows.Forms.Label label2;
@@ -224,11 +196,8 @@ namespace Integrador
         private System.Windows.Forms.TextBox txtCurso;
         private System.Windows.Forms.TextBox txtMateria;
         private System.Windows.Forms.Button btnProfesionales;
-        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btBorrarD;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }
