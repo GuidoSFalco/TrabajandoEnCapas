@@ -42,6 +42,7 @@ namespace Integrador
             this.btBorrarD = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.cbCarreraA = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.datagridview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,11 +159,24 @@ namespace Integrador
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 20;
             // 
+            // cbCarreraA
+            // 
+            this.cbCarreraA.FormattingEnabled = true;
+            this.cbCarreraA.Items.AddRange(new object[] {
+            "Programacion",
+            "Matematica",
+            "Fisica"});
+            this.cbCarreraA.Location = new System.Drawing.Point(272, 147);
+            this.cbCarreraA.Name = "cbCarreraA";
+            this.cbCarreraA.Size = new System.Drawing.Size(100, 21);
+            this.cbCarreraA.TabIndex = 53;
+            // 
             // FormAdmDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbCarreraA);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btBorrarD);
@@ -199,5 +213,6 @@ namespace Integrador
         private System.Windows.Forms.Button btBorrarD;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.ComboBox cbCarreraA;
     }
 }

@@ -17,7 +17,23 @@ namespace Integrador
         public FormAdmAlumnos()
         {
             InitializeComponent();
+            dataGridView1.ColumnCount = 3;
+            dataGridView1.Columns[0].HeaderText = "Nombre";
+            dataGridView1.Columns[1].HeaderText = "DNI";
+            dataGridView1.Columns[2].HeaderText = "Legajo";
+            dataGridView1.Columns[3].HeaderText = "Carrera";
+            dataGridView1.Columns[4].HeaderText = "Nacimiento";
+            dataGridView1.Columns[5].HeaderText = "Genero";
+
+
+            dataGridView1.Columns[0].Width = 200;
+            dataGridView1.Columns[1].Width = 60;
+            dataGridView1.Columns[2].Width = 75;
+            dataGridView1.Columns[3].Width = 75;
+            dataGridView1.Columns[4].Width = 75;
+            dataGridView1.Columns[5].Width = 75;
         }
+        
         public Alumno alumnos = new Alumno();
         int posicion = 0;
         string genero;
@@ -72,50 +88,7 @@ namespace Integrador
                 dataGridView1.Rows[b].Cells[4].Value = alumnos.Nacimiento;
                 dataGridView1.Rows[b].Cells[5].Value = alumnos.Sexo;
 
-                //string orden = string.Empty;
-                //orden = "Insert into Alumnos values (@Nombre, @Dni,@Fecha,@Edad,@Sexo,@Legajo,@Carrera);";
-                //OleDbCommand cmd = new OleDbCommand(orden, conexion);
-                //try
-                //{
-                /*
-                    Abrirconexion();
-                    cmd.Parameters.AddWithValue("@Nombre", objAlumno.Nombre);
-                    cmd.Parameters.AddWithValue("@Dni", objAlumno.Dni);
-                    cmd.Parameters.AddWithValue("@Fecha", objAlumno.FechNac.Date);
-                    cmd.Parameters.AddWithValue("@Edad", objAlumno.Edad(edad));
-                    cmd.Parameters.AddWithValue("@Sexo", objAlumno.Sexo);
-                    cmd.Parameters.AddWithValue("@Legajo", objAlumno.Legajo);
-                    cmd.Parameters.AddWithValue("@Carrera", objAlumno.Carrera);
-                    resultado = cmd.ExecuteNonQuery();
-                }
-                catch (Exception)
-                {
-
-                    MessageBox.Show("El Dni ingresado ya existe en la tabla", "Error");
-                }
-                finally
-                {
-                    CerrarConexion();
-                    cmd.Dispose();
-                }
-                */
-
-
-                /*
-                OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Usuario\Documents\Bases de datos\basededatos11.accdb");
-                con.Open();
-                OleDbCommand cmd = new OleDbCommand("select * from Alumnos", con);
                 
-                orden = "insert into Alumnos values (" + alumnos.Nombre + ",'" + alumnos.Dni + "';"+alumnos.Legajo+";"+alumnos.Carrera+";"+alumnos.Nacimiento+";"+alumnos.Sexo+");";
-
-                OleDbDataAdapter sda = new OleDbDataAdapter();
-                DataTable td = new DataTable();
-                sda.SelectCommand = cmd;
-                sda.Fill(td);
-                dataGridView1.DataSource = td;
-
-                con.Close();
-                */
             }
 
             
@@ -246,5 +219,7 @@ private void dataGridView1_CellContentClick(object sender, DataGridViewCellEvent
             //cmd.Parameters.AddWithValue("@nacimiento", alumnos.Nacimiento);
             //cmd.Parameters.AddWithValue("@genero", genero);
         }
+        
+
     }
 }
