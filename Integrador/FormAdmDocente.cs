@@ -129,7 +129,7 @@ namespace Integrador
 
         #endregion
 
-        #region Eventos
+        
 
         
         private void DGVdocente_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -205,42 +205,10 @@ namespace Integrador
 
         }
 
-        private void txtLegajoD_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                MessageBox.Show("No se permiten numeros", "Error");
-                e.Handled = true;
-            }
-        }
+        
 
-        private void txtDniD_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                MessageBox.Show("No se permiten numeros", "Error");
-                e.Handled = true;
-            }
-           
-        }
-        private void txtNombreD_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsSeparator(e.KeyChar))
-            {
-                MessageBox.Show("No se permiten numeros", "Error");
-                e.Handled = true;
-            }
-            
-        }
-        private void cbMateria_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
-            {
-                MessageBox.Show("No se permiten numeros", "Error");
-                e.Handled = true;
-            }
-        #endregion
-        }
+        
+        
 
         private void btAddD_Click_1(object sender, EventArgs e)
         {
@@ -314,6 +282,29 @@ namespace Integrador
                     FillDGV();
                     Limpiar();
                 }
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsSeparator(e.KeyChar))
+            {
+                MessageBox.Show("No se permiten numeros", "Error");
+                e.Handled = true;
+            }
+        }
+
+        private void cbCarreraA_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCurso_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsSeparator(e.KeyChar))
+            {
+                MessageBox.Show("No se permiten numeros", "Error");
+                e.Handled = true;
             }
         }
     }

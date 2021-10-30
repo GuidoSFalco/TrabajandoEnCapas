@@ -115,6 +115,7 @@ namespace Integrador
             this.txtCurso.Name = "txtCurso";
             this.txtCurso.Size = new System.Drawing.Size(100, 20);
             this.txtCurso.TabIndex = 10;
+            this.txtCurso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCurso_KeyPress);
             // 
             // btnProfesionales
             // 
@@ -150,6 +151,7 @@ namespace Integrador
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 20;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // cbCarreraA
             // 
@@ -162,6 +164,7 @@ namespace Integrador
             this.cbCarreraA.Name = "cbCarreraA";
             this.cbCarreraA.Size = new System.Drawing.Size(100, 21);
             this.cbCarreraA.TabIndex = 53;
+            this.cbCarreraA.SelectedIndexChanged += new System.EventHandler(this.cbCarreraA_SelectedIndexChanged);
             // 
             // FormAdmDocente
             // 
