@@ -145,8 +145,8 @@ namespace Integrador
                 {
 
                     txtNombre.Text = datagridview[0, pos].Value.ToString();
-                    txtMateria.Text = datagridview[1, pos].Value.ToString();
-                    txtMateria.Text = datagridview[2, pos].Value.ToString();
+                    cbCarreraA.Text = datagridview[1, pos].Value.ToString();
+                    txtCurso.Text = datagridview[2, pos].Value.ToString();
 
                     
 
@@ -164,7 +164,7 @@ namespace Integrador
         private void Limpiar()
         {
             txtNombre.Clear();
-            txtMateria.Clear();
+            cbCarreraA.Text = "";
             txtCurso.Clear();
 
         }
@@ -194,7 +194,7 @@ namespace Integrador
         private void TxtObj()
         {
             ObjEntDocente.Nombre = txtNombre.Text;
-            ObjEntDocente.Materia = txtMateria.Text;
+            ObjEntDocente.Materia = cbCarreraA.Text;
             ObjEntDocente.Curso = txtCurso.Text;
         }
 
@@ -244,7 +244,7 @@ namespace Integrador
 
         private void btAddD_Click_1(object sender, EventArgs e)
         {
-            if (txtNombre.Text == "" || txtMateria.Text == "" || txtCurso.Text == "")
+            if (txtNombre.Text == "" || cbCarreraA.Text == "" || txtCurso.Text == "")
             {
                 MessageBox.Show("Debe completar todos los campos para poder agregar un docente", "Error");
             }

@@ -37,7 +37,6 @@ namespace Integrador
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCurso = new System.Windows.Forms.TextBox();
-            this.txtMateria = new System.Windows.Forms.TextBox();
             this.btnProfesionales = new System.Windows.Forms.Button();
             this.btBorrarD = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -117,13 +116,6 @@ namespace Integrador
             this.txtCurso.Size = new System.Drawing.Size(100, 20);
             this.txtCurso.TabIndex = 10;
             // 
-            // txtMateria
-            // 
-            this.txtMateria.Location = new System.Drawing.Point(216, 95);
-            this.txtMateria.Name = "txtMateria";
-            this.txtMateria.Size = new System.Drawing.Size(100, 20);
-            this.txtMateria.TabIndex = 9;
-            // 
             // btnProfesionales
             // 
             this.btnProfesionales.Location = new System.Drawing.Point(130, 15);
@@ -166,7 +158,7 @@ namespace Integrador
             "Programacion",
             "Matematica",
             "Fisica"});
-            this.cbCarreraA.Location = new System.Drawing.Point(272, 147);
+            this.cbCarreraA.Location = new System.Drawing.Point(216, 94);
             this.cbCarreraA.Name = "cbCarreraA";
             this.cbCarreraA.Size = new System.Drawing.Size(100, 21);
             this.cbCarreraA.TabIndex = 53;
@@ -189,7 +181,6 @@ namespace Integrador
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCurso);
-            this.Controls.Add(this.txtMateria);
             this.Name = "FormAdmDocente";
             this.Text = "FormAdmDocente";
             ((System.ComponentModel.ISupportInitialize)(this.datagridview)).EndInit();
@@ -208,7 +199,6 @@ namespace Integrador
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCurso;
-        private System.Windows.Forms.TextBox txtMateria;
         private System.Windows.Forms.Button btnProfesionales;
         private System.Windows.Forms.Button btBorrarD;
         private System.Windows.Forms.Label label3;
