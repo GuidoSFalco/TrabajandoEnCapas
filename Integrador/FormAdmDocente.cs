@@ -17,24 +17,15 @@ namespace Integrador
         public FormAdmDocente()
         {
             InitializeComponent();
-            datagridview.ColumnCount = 7;
+            datagridview.ColumnCount = 3;
             datagridview.Columns[0].HeaderText = "Nombre";
-            datagridview.Columns[1].HeaderText = "Dni";
-            datagridview.Columns[2].HeaderText = "Fecha de nacimiento";
-            datagridview.Columns[3].HeaderText = "Edad";
-            datagridview.Columns[4].HeaderText = "Sexo";
-            datagridview.Columns[6].HeaderText = "Legajo";
-            datagridview.Columns[5].HeaderText = "Materia";
+            datagridview.Columns[1].HeaderText = "Materia";
+            datagridview.Columns[2].HeaderText = "Curso";
 
 
             datagridview.Columns[0].Width = 200;
             datagridview.Columns[1].Width = 60;
             datagridview.Columns[2].Width = 75;
-            datagridview.Columns[3].Width = 40;
-            datagridview.Columns[4].Width = 65;
-            datagridview.Columns[5].Width = 80;
-            datagridview.Columns[6].Width = 200;
-
             
 
 
