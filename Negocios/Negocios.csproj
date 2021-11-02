@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="NegAlumnos.cs" />
     <Compile Include="NegDocentes.cs" />
-    <Compile Include="NegProfesionales.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

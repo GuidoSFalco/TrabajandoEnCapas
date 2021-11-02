@@ -48,7 +48,6 @@ namespace Integrador
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnFormDocentes = new System.Windows.Forms.Button();
-            this.btnFormProfesionales = new System.Windows.Forms.Button();
             this.btnMostrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -221,22 +220,13 @@ namespace Integrador
             // 
             // btnFormDocentes
             // 
-            this.btnFormDocentes.Location = new System.Drawing.Point(148, 12);
+            this.btnFormDocentes.Location = new System.Drawing.Point(22, 12);
             this.btnFormDocentes.Name = "btnFormDocentes";
             this.btnFormDocentes.Size = new System.Drawing.Size(121, 23);
             this.btnFormDocentes.TabIndex = 19;
             this.btnFormDocentes.Text = "Formulario Docentes";
             this.btnFormDocentes.UseVisualStyleBackColor = true;
             this.btnFormDocentes.Click += new System.EventHandler(this.btnFormDocentes_Click);
-            // 
-            // btnFormProfesionales
-            // 
-            this.btnFormProfesionales.Location = new System.Drawing.Point(12, 12);
-            this.btnFormProfesionales.Name = "btnFormProfesionales";
-            this.btnFormProfesionales.Size = new System.Drawing.Size(130, 23);
-            this.btnFormProfesionales.TabIndex = 18;
-            this.btnFormProfesionales.Text = "Formulario Profesionales";
-            this.btnFormProfesionales.UseVisualStyleBackColor = true;
             // 
             // btnMostrar
             // 
@@ -255,7 +245,6 @@ namespace Integrador
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.btnFormDocentes);
-            this.Controls.Add(this.btnFormProfesionales);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnGuardar);
@@ -304,7 +293,6 @@ namespace Integrador
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnFormDocentes;
-        private System.Windows.Forms.Button btnFormProfesionales;
         private System.Windows.Forms.Button btnMostrar;
     }
 }

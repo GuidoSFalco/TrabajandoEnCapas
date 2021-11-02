@@ -37,7 +37,6 @@ namespace Integrador
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCurso = new System.Windows.Forms.TextBox();
-            this.btnProfesionales = new System.Windows.Forms.Button();
             this.btBorrarD = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -117,15 +116,6 @@ namespace Integrador
             this.txtCurso.TabIndex = 10;
             this.txtCurso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCurso_KeyPress);
             // 
-            // btnProfesionales
-            // 
-            this.btnProfesionales.Location = new System.Drawing.Point(130, 15);
-            this.btnProfesionales.Name = "btnProfesionales";
-            this.btnProfesionales.Size = new System.Drawing.Size(134, 23);
-            this.btnProfesionales.TabIndex = 18;
-            this.btnProfesionales.Text = "Formulario Profesionales";
-            this.btnProfesionales.UseVisualStyleBackColor = true;
-            // 
             // btBorrarD
             // 
             this.btBorrarD.Location = new System.Drawing.Point(297, 173);
@@ -175,7 +165,6 @@ namespace Integrador
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btBorrarD);
-            this.Controls.Add(this.btnProfesionales);
             this.Controls.Add(this.btnFormAlumnos);
             this.Controls.Add(this.btMod);
             this.Controls.Add(this.btAddD);
@@ -202,7 +191,6 @@ namespace Integrador
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCurso;
-        private System.Windows.Forms.Button btnProfesionales;
         private System.Windows.Forms.Button btBorrarD;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNombre;

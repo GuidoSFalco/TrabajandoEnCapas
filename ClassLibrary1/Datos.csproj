@@ -45,7 +45,6 @@
     <Compile Include="DatosAlumnos.cs" />
     <Compile Include="DatosConexionBD.cs" />
     <Compile Include="DatosDocentes.cs" />
-    <Compile Include="DatosProfesionales.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
